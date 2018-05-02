@@ -238,7 +238,7 @@ class AuthorizeNetSimModuleTest < Test::Unit::TestCase
 
   def test_production_mode
     ActiveMerchant::Billing::Base.integration_mode = :production
-    assert_equal 'https://secure.authorize.net/gateway/transact.dll', AuthorizeNetSim.service_url
+    assert_equal 'https://secure2.authorize.net/gateway/transact.dll', AuthorizeNetSim.service_url
   end
 
 end
